@@ -25,7 +25,18 @@ nav a {
 }
 /* makes the background yellow when navigation links are hovered over*/
 nav a:hover {
-  flex: 1;
   background-color:yellow;
-  text-align: center;
+}
+
+.banner {
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  height:360px;
+  background-image: url("https://images.all-free-download.com/images/graphicthumb/different_people_pattern_seamless_vector_576727.jpg");
+}
+
+.phrase {
+  background-color: black;
+  color: white;
+  width: 20%;
 }
