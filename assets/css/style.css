@@ -1,6 +1,13 @@
 .flex-container {
   display:flex;
 }
+/* arranged different sections of contact */
+.flex-item {
+  width:16%;
+  text-align: center;
+  border: black 3px solid;
+  border-top: transparent;
+}
 
 .top {
   background-color: transparent;
@@ -145,3 +152,40 @@ nav a:hover {
 .ws6:hover {  opacity:0.7;  }
 
 .ws7:hover {  opacity:0.7;  }
+/* designed contact section with flex */
+.contact {
+  flex-direction: row;
+  height: 100px;
+}
+
+.contact a {
+  color:slategray;
+}
+
+.co0 {
+  width: 20%;
+  background-color:slategrey;
+  color:silver;
+  margin: 0;
+  padding: 17px 0;
+}
+
+.co1 {
+  background-color:azure; padding: 30px 0;
+}
+
+.co2 {
+  background-color:darkgrey; padding: 30px 0;
+}
+
+.co3 {
+  background-color:whitesmoke; padding: 30px 0;
+}
+
+.co4 {
+  background-color:silver; padding: 30px 0;
+}
+
+.co5 {
+  background-color:snow; padding: 30px 0;
+}
