@@ -23,7 +23,7 @@ nav a {
   color:mediumseagreen;
   margin: 0 25px;
 }
-/* makes the background yellow when navigation links are hovered over*/
+/* makes the background yellow when navigation links are hovered over */
 nav a:hover {
   background-color:yellow;
 }
@@ -43,17 +43,21 @@ nav a:hover {
 /* designed the about me section with grid */
 .grid-container {
   width:100%;
-  height: 360px;
+  height: 720px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1.4fr 0.6fr 0.6fr 1.4fr;
+  grid-template-rows: 1.4fr 0.6fr 0.6fr 1.4fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
     "ab0 ab1 ab1 ab1 ab2"
     "ab0 ab4 ab5 ab5 ab2"
     "ab0 ab4 ab5 ab5 ab2"
     "ab0 ab4 ab3 ab3 ab3"
+    "ws0 ws7 ws2 ws2 ws1"
+    "ws0 ws4 ws2 ws2 ws1"
+    "ws0 ws4 ws2 ws2 ws3"
+    "ws0 ws4 ws6 ws5 ws5";
 }
 
 .ab0, .ab1, .ab2, .ab3, .ab4, .ab5 {
@@ -63,7 +67,6 @@ nav a:hover {
 .ab0 { 
   grid-area: ab0; 
   background-image: url("../images/Selfie.jpg"); 
-  background-repeat: no-repeat;
   background-size: 100%; 
   color:white;
 }
@@ -77,3 +80,68 @@ nav a:hover {
 .ab4 { grid-area: ab4; background-color:dimgrey; }
 
 .ab5 { grid-area: ab5; background-color:slategray; }
+/* designed workspace for project viewing with grid */
+.ws0, .ws1, .ws2, .ws3, .ws4, .ws5, .ws6, .ws7 {
+  background-size: 100%;
+  color: white;
+}
+/* made images for project backgrounds */
+.ws0 { 
+  grid-area: ws0; 
+  background-image: url(../images/workspace.jpg); 
+}
+
+.ws1 { 
+  grid-area: ws1; 
+  background-image: url(../images/code-quiz.jpg); 
+  color:white;
+}
+
+.ws2 { 
+  grid-area: ws2; 
+  background-image: url(../images/run-buddy-2.jpg); 
+}
+
+.ws3 { 
+  grid-area: ws3; 
+  background-image: url(../images/password.jpg); 
+  color:white;
+}
+
+.ws4 { 
+  grid-area: ws4; 
+  background-image: url(../images/task.jpg); 
+}
+
+.ws5 { 
+  grid-area: ws5; 
+  background-image: url(../images/weather.jpg); 
+}
+
+.ws6 { 
+  grid-area: ws6; 
+  background-image: url(../images/schedule.jpg); 
+  background-size:100%; 
+  color:snow;
+}
+
+.ws7 { 
+  grid-area: ws7; 
+  background-image: url(../images/robots.jpg); 
+  background-size:100%; 
+  color:white; 
+}
+/* makes the background lighter when navigation links are hovered over */
+.ws1:hover {  opacity:0.7;  }
+
+.ws2:hover {  opacity:0.7;  }
+
+.ws3:hover {  opacity:0.7;  }
+
+.ws4:hover {  opacity:0.7;  }
+
+.ws5:hover {  opacity:0.7;  }
+
+.ws6:hover {  opacity:0.7;  }
+
+.ws7:hover {  opacity:0.7;  }
