@@ -1,0 +1,31 @@
+.flex-container {
+  display:flex;
+}
+
+.top {
+  background-color: transparent;
+  padding: 5px 20px;
+}
+
+.h1El {
+  width: 50%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+nav {
+  width: 100%;
+  text-align: right;
+  padding: 25px 25px;
+}
+
+nav a {
+  font-size: 25px;
+  color:mediumseagreen;
+  margin: 0 25px;
+}
+/* makes the background yellow when navigation links are hovered over*/
+nav a:hover {
+  flex: 1;
+  background-color:yellow;
+  text-align: center;
+}
