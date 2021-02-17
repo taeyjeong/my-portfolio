@@ -11,7 +11,7 @@
   width: 50%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
+/* designed the navigation bar */
 nav {
   width: 100%;
   text-align: right;
@@ -27,7 +27,7 @@ nav a {
 nav a:hover {
   background-color:yellow;
 }
-
+/* designed the banner */
 .banner {
   flex-direction: column-reverse;
   align-items: flex-end;
@@ -40,3 +40,40 @@ nav a:hover {
   color: white;
   width: 20%;
 }
+/* designed the about me section with grid */
+.grid-container {
+  width:100%;
+  height: 360px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.4fr 0.6fr 0.6fr 1.4fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "ab0 ab1 ab1 ab1 ab2"
+    "ab0 ab4 ab5 ab5 ab2"
+    "ab0 ab4 ab5 ab5 ab2"
+    "ab0 ab4 ab3 ab3 ab3"
+}
+
+.ab0, .ab1, .ab2, .ab3, .ab4, .ab5 {
+  border: black 2px dotted;
+}
+
+.ab0 { 
+  grid-area: ab0; 
+  background-image: url("../images/Selfie.jpg"); 
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  color:white;
+}
+
+.ab1 { grid-area: ab1; background-color:grey; }
+
+.ab2 { grid-area: ab2; background-color:darkgrey; }
+
+.ab3 { grid-area: ab3; background-color:silver; }
+
+.ab4 { grid-area: ab4; background-color:dimgrey; }
+
+.ab5 { grid-area: ab5; background-color:slategray; }
