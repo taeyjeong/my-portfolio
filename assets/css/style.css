@@ -203,3 +203,70 @@ footer {
   width: 100%;
   justify-content: center;
 }
+
+@media screen and (max-width: 1024px) {
+  .flex-container {
+    width:100%;
+    height: auto;
+  }
+
+  .flex-item {
+    width:100%;
+  }
+
+  .grid-container {
+    width:100%;
+    height:3500px;
+    background-repeat:no-repeat;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "ab0"
+      "ab0"
+      "ab0"
+      "ab5"
+      "ab1"
+      "ab2"
+      "ab3"
+      "ab4"
+      "ws0"
+      "ws0"
+      "ws0"
+      "ws7"
+      "ws7"
+      "ws2"
+      "ws2"
+      "ws1"
+      "ws1"
+      "ws3"
+      "ws3"
+      "ws4"
+      "ws4"
+      "ws6"
+      "ws6"
+      "ws5"
+      "ws5";
+  }
+
+  .ab0 {
+    align-items: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+  }
+
+  .ws0, .ws2 {
+    align-items: center;
+    background-repeat: no-repeat;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .bot {
+    flex-direction:column-reverse;
+  }
+}
